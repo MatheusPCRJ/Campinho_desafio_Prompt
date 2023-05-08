@@ -10,3 +10,9 @@
 // const resultadoFinal = valorDoJantar + taxaGarcon;
 // alert(`"O valor total do Jantar sairá por ${resultadoFinal}"`)
 
+
+//Terceiro desafio, programa para uma pizzaria!
+// const valorTotal = parseFloat(prompt("Favor informar o valor total."));
+// const clientes = parseInt(prompt("Quantas pessoas irão pagar?"));
+// const TotalCadaCliente = valorTotal / clientes;
+// alert("Valor de cada um ficou por R$" + TotalCadaCliente.toFixed(2));
