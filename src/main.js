@@ -1,6 +1,7 @@
 // Primeiro desafio, devolva o dobro!
 const clickMultiplier = document.querySelector('#clickMultiplier');
 let resultado = document.querySelector('#receiveNumber');
+
 function multiplier(evento) {
     evento.preventDefault();
     const pergunta = parseInt(prompt("Me fale um número que eu devolverei o dobro"));
