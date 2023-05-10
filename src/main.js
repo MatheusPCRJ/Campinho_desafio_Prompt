@@ -4,13 +4,13 @@ let resultado = document.querySelector('#receiveNumber');
 
 function multiplier() {
     const pergunta = parseInt(prompt("Me fale um número que eu devolverei o dobro"));
-    return resultado.innerHTML = "O resultado é " + (pergunta*2).toFixed(2);
+    return resultado.innerHTML = "O resultado é " + (pergunta * 2).toFixed(2);
 }
 clickMultiplier.onclick = multiplier;
 
 
 
-const clickDinner = document.querySelector('#linkDinner');
+const clickDinner = document.querySelector('#clickDinner');
 let resultDinner = document.querySelector('#resultDinner');
 
 function calculateDinner() {
@@ -24,8 +24,13 @@ clickDinner.onclick = calculateDinner;
 
 
 
-//Terceiro desafio, programa para uma pizzaria!
-// const valorTotal = parseFloat(prompt("Favor informar o valor total."));
-// const clientes = parseInt(prompt("Quantas pessoas irão pagar?"));
-// const TotalCadaCliente = valorTotal / clientes;
-// alert("Valor de cada um ficou por R$" + TotalCadaCliente.toFixed(2));
+const clickPizza = document.querySelector('#clickPizza');
+let resultPayment = document.querySelector('#resultPayment');
+
+function calculatePayment() {
+    const valorTotal = parseFloat(prompt("Favor informar o valor total."));
+    const clientes = parseInt(prompt("Quantas pessoas irão pagar?"));
+    const TotalCadaCliente = valorTotal / clientes;
+    return resultPayment.innerHTML = "O valor para cada ficou por R$" + TotalCadaCliente.toFixed(2);
+}
+clickPizza.onclick = calculatePayment;
