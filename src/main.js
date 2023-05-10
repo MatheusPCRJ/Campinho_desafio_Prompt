@@ -3,7 +3,7 @@ const clickMultiplier = document.querySelector('#clickMultiplier');
 let resultado = document.querySelector('#receiveNumber');
 
 function multiplier() {
-    const pergunta = parseInt(prompt("Me fale um número que eu devolverei o dobro"));
+    const pergunta = parseFloat(prompt("Me fale um número que eu devolverei o dobro"));
     return resultado.innerHTML = "O resultado é " + (pergunta * 2).toFixed(2);
 }
 clickMultiplier.onclick = multiplier;
@@ -14,7 +14,7 @@ const clickDinner = document.querySelector('#clickDinner');
 let resultDinner = document.querySelector('#resultDinner');
 
 function calculateDinner() {
-    const valueDinner = parseInt(prompt("Me informe o valor do jantar"));
+    const valueDinner = parseFloat(prompt("Me informe o valor do jantar"));
     alert("A taxa do garçon é R$12,00.");
     const rateWaiter = 12;
     const resultFinal = valueDinner + rateWaiter
